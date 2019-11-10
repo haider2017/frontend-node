@@ -1,0 +1,16 @@
+applicationName: aurora
+application:
+  annotations:
+    lab: helm
+
+frontend:
+  additionalLabels:
+    tier: frontend
+  replicas: 1
+  podLabels:
+    tier: frontend
+  image: devopslab3img1/frontend-node
+  imagePullPolicy: IfNotPresent
+  containerPort: 8080
+  nodePort: 31000
+  serviceType: "NodePort"

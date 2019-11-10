@@ -1,0 +1,6 @@
+applicationName: microservice-application-haider
+
+frontend:
+  podLabels:
+    tier: frontend
+  nodePort: 32000
